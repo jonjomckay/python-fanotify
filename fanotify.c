@@ -437,6 +437,13 @@ initfanotify(void) {
                      (PyObject *)&fanotify_EventMetadataType);
 
   PyModule_AddIntMacro(module, FAN_ACCESS);
+  PyModule_AddIntMacro(module, FAN_ATTRIB);
+  PyModule_AddIntMacro(module, FAN_CREATE);
+  PyModule_AddIntMacro(module, FAN_DELETE);
+  PyModule_AddIntMacro(module, FAN_DELETE_SELF);
+  PyModule_AddIntMacro(module, FAN_MOVED_FROM);
+  PyModule_AddIntMacro(module, FAN_MOVED_TO);
+  PyModule_AddIntMacro(module, FAN_MOVE_SELF);
   PyModule_AddIntMacro(module, FAN_MODIFY);
   PyModule_AddIntMacro(module, FAN_CLOSE_WRITE);
   PyModule_AddIntMacro(module, FAN_CLOSE_NOWRITE);
